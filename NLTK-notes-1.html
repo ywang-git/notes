@@ -3,24 +3,24 @@
 <head>
         <meta charset="utf-8" />
         <title>Language Processing and Python</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="./theme/css/main.css" />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">notes by dreamer </a></h1>
+                <h1><a href="./">notes by dreamer </a></h1>
                 <nav><ul>
-                    <li><a href="/category/housekeeping.html">housekeeping</a></li>
-                    <li><a href="/category/java.html">Java</a></li>
-                    <li class="active"><a href="/category/nlp.html">NLP</a></li>
-                    <li><a href="/category/reading.html">Reading</a></li>
+                    <li><a href="./category/housekeeping.html">housekeeping</a></li>
+                    <li><a href="./category/java.html">Java</a></li>
+                    <li class="active"><a href="./category/nlp.html">NLP</a></li>
+                    <li><a href="./category/reading.html">Reading</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/NLTK-notes-1.html" rel="bookmark"
+        <a href="./NLTK-notes-1.html" rel="bookmark"
            title="Permalink to Language Processing and Python">Language Processing and Python</a></h1>
     </header>
 
@@ -31,10 +31,10 @@
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="/author/dreamer.html">dreamer</a>
+                By                         <a class="url fn" href="./author/dreamer.html">dreamer</a>
         </address>
-<p>In <a href="/category/nlp.html">NLP</a>.</p>
-<p>tags: <a href="/tag/nlp.html">NLP</a> <a href="/tag/python.html">python</a> <a href="/tag/nltk.html">NLTK</a> </p>
+<p>In <a href="./category/nlp.html">NLP</a>.</p>
+<p>tags: <a href="./tag/nlp.html">NLP</a> <a href="./tag/python.html">python</a> <a href="./tag/nltk.html">NLTK</a> </p>
 </footer><!-- /.post-info -->      <h1>1. Language Processing and Python</h1>
 <h2>1 Computing with Language: Texts and Words</h2>
 <h3>1.1 Getting Started with Python</h3>
@@ -88,8 +88,8 @@
 
 
 <h3>3.2 Fine-grained Selection of Words</h3>
-<p>"the set of all $w$ such that $w$ is an element of $V$ (the vocabulary) and $w$ has property $P$"</p>
-<p>(1) a. ${w | w \in V \&amp; P(w)}$ <br>
+<p>"the set of all <span class="math">\(w\)</span> such that <span class="math">\(w\)</span> is an element of <span class="math">\(V\)</span> (the vocabulary) and <span class="math">\(w\)</span> has property <span class="math">\(P\)</span>"</p>
+<p>(1) a. <span class="math">\(\{w | w \in V \&amp; P(w)\}\)</span> <br>
       b. <code>[w for w in V if p(w)]</code></p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">V</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">text1</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">long_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">V</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">]</span>
@@ -205,6 +205,68 @@ eyJoaXN0b3J5IjpbMTY3NTE3NjgxNCwtMTMxNzU1MDUwNSwxMz
 E5ODc1MzY3XX0=
 --></li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
     </div><!-- /.entry-content -->
 
   </article>
@@ -216,7 +278,6 @@ E5ODc1MzY3XX0=
                             <li><a href="http://getpelican.com/">Pelican</a></li>
                             <li><a href="http://python.org/">Python.org</a></li>
                             <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
                 <div class="social">
